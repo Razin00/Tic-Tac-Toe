@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe | AIBM-CODERS</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .col {
+        height: 65px;
+        width: 65px;
+        border: 2px solid rgb(119, 10, 243);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        cursor: pointer;
+      }
+      .game{
+        justify-content: center;
+        align-items: center;
+        font-size: 77px;
+      }
+      .hi{
+       background:-webkit-linear-gradient(rgb(0, 255, 21),rgba(235, 212, 4, 0.849));
+       -webkit-background-clip:text;
+       -webkit-text-fill-color: transparent;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+      <br>
+      <h1 id="game">Tic Tac Toe</h1>
+      <br>
+    <div class="container">
+      <div class="grid">
+        <div class="row">
+          <div onclick="handleClick(this)" id="0" class="col"></div>
+          <div onclick="handleClick(this)" id="1" class="col"></div>
+          <div onclick="handleClick(this)" id="2" class="col"></div>
+        </div>
+        <div class="row">
+          <div onclick="handleClick(this)" id="3" class="col"></div>
+          <div onclick="handleClick(this)" id="4" class="col"></div>
+          <div onclick="handleClick(this)" id="5" class="col"></div>
+        </div>
+        <div class="row">
+          <div onclick="handleClick(this)" id="6" class="col"></div>
+          <div onclick="handleClick(this)" id="7" class="col"></div>
+          <div onclick="handleClick(this)" id="8" class="col"></div>
+        </div>
+      </div>
+    </div>
+    <H4 class="hi">Developer | Mohammed Razin cr</H4>
+    <script src="script.js"></script>
+  </body>
+</html>
